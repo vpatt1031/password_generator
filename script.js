@@ -2,6 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 
 //Assigned variables for password characters in arrays as strings.
+//.split will split the special characters as individual strings.
 
 var lowerCaseChar = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "y", "z"];
 var upperCaseChar = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "Y", "Z"];
@@ -17,19 +18,23 @@ function writePassword() {
   passwordText.value = password;
 
 }
+//function to run prompt asking for the number of characters in the password
 
 function generatePassword() {
   var bankOfPossibilities= [];
   var promptInput = prompt("How many characters would you like in your password? Enter a number between 8-128");
   if(promptInput <= 7 || promptInput >=129) {
-    alert("THAT'S THE WRONG NUMBER!");
+    alert("THAT'S THE WRONG NUMBER! Please enter a number between 8-128");
     generatePassword();
   }
+//declaring variables with the confirm method to gain user input determining password criteria
 
   var lowerCaseQ = confirm("Do you want to include Lower Case Characters?");
   var UpperCaseQ = confirm("Do you want to include Upper Case Characters?");
   var NumberQ = confirm("Do you want to include Number Characters?");
   var SpecialQ = confirm("Do you want to include Special Characters?");
+
+  //using the Concat method to create a new array based on the user input to each prompt
 
   if(lowerCaseQ === true){
     bankOfPossibilities = bankOfPossibilities.concat(lowerCaseChar);
@@ -44,6 +49,8 @@ function generatePassword() {
     bankOfPossibilities = bankOfPossibilities.concat(specialCharArr);
   }
 
+//using a for loop and math.random method to create a password based on the bankOfPossibilities array created from user input prompts
+
   var randomPass = "";
   for(i=0; i<promptInput; i++) {
     //bankOfPossibilities
@@ -55,6 +62,8 @@ function generatePassword() {
     randomPass += randomChar;
     console.log(randomPass);
   }
+
+//return randomPass will display the password generated to the user based on the criteria selected through the prompts
 
   return randomPass
 }
