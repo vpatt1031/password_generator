@@ -29,10 +29,10 @@ function generatePassword() {
   }
 //declaring variables with the confirm method to gain user input determining password criteria
 
-  var lowerCaseQ = confirm("Do you want to include Lower Case Characters?");
-  var UpperCaseQ = confirm("Do you want to include Upper Case Characters?");
-  var NumberQ = confirm("Do you want to include Number Characters?");
-  var SpecialQ = confirm("Do you want to include Special Characters?");
+  var lowerCaseQ = confirm("Do you want to include Lower Case letters in your password?");
+  var UpperCaseQ = confirm("Do you want to include Upper Case letters in your password?");
+  var NumberQ = confirm("Do you want to include Numbers in your password?");
+  var SpecialQ = confirm("Do you want to include Special Characters in your password?");
 
   //using the Concat method to create a new array based on the user input to each prompt
 
