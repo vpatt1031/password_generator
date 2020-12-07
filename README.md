@@ -6,13 +6,20 @@ You can access the application from this link: https://vpatt1031.github.io/passw
 
 1. To get started click the Generate Password button.
 ![alttag](/assets/screenshot-vpatt1031-github-io-password_generator-1607366098217.png)
+
 2. Answer the prompt by enetering a number between 8-128.
 ![alttag](/assets/screenshot_enter_number.png)
+
 3. Answer the prompt, "do you want to include Lower Case letters in your password?" Click OK for yes and Cancel for no.
 ![alttag](/assets/screenshot_lowercase.png)
+
 4. Answer the prompt, "do you want to include Upper Case letters in your password?" Click OK for yes and Cancel for no.
 ![alttag](/assets/screenshot_uppercase.png)
+
 5. Answer the prompt, "do you want to include numbers in your password?" Click OK for yes and Cancel for no.
 ![alttag](/assets/screenshot_include_numbers.png)
+
 6. Answer the prompt, "do you want to include Special Characters in your password?" Click OK for yes and Cancel for no.
 ![alttag](/assets/screenshot_special_char.png)
+
+After answering the this last prompt for special characters, your password should appear in the text area that said, "Your Secure Password."
